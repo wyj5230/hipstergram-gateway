@@ -1,0 +1,50 @@
+{
+  "generator-jhipster": {
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": [
+      "en"
+    ],
+    "messageBroker": false,
+    "nativeLanguage": "en",
+    "packageName": "com.hipstergram",
+    "packageFolder": "com/hipstergram",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "serviceDiscoveryType": "eureka",
+    "skipClient": false,
+    "skipServer": false,
+    "testFrameworks": [
+      "protractor",
+      "gatling"
+    ],
+    "websocket": false,
+    "applicationType": "gateway",
+    "baseName": "gateway",
+    "authenticationType": "uaa",
+    "uaaBaseName": "uaa",
+    "buildTool": "maven",
+    "cacheProvider": "hazelcast",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "serverPort": "8080",
+    "skipUserManagement": false,
+    "jhipsterVersion": "6.0.1",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "entities": [
+    "Follow",
+    "Post",
+    "Comment",
+    "Photo",
+    "Like"
+  ]
+}

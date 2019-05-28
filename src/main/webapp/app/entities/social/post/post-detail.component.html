@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="post">
+            <h2><span jhiTranslate="gatewayApp.socialPost.detail.title">Post</span> {{post.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gatewayApp.socialPost.user">User</span></dt>
+                <dd>
+                    <span>{{post.user}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.socialPost.description">Description</span></dt>
+                <dd>
+                    <span>{{post.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.socialPost.photo">Photo</span></dt>
+                <dd>
+                    <span>{{post.photo}}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.socialPost.createdOn">Created On</span></dt>
+                <dd>
+                    <span>{{post.createdOn}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/post', post.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "gatewayApp": {
+    "filestorePhoto": {
+      "home": {
+        "title": "Photos",
+        "createLabel": "Create a new Photo",
+        "createOrEditLabel": "Create or edit a Photo"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Photo {{ id }}?"
+      },
+      "detail": {
+        "title": "Photo"
+      },
+      "content": "Content"
+    }
+  },
+  "filestoreApp": {
+    "filestorePhoto": {
+      "created": "A new Photo is created with identifier {{ param }}",
+      "updated": "A Photo is updated with identifier {{ param }}",
+      "deleted": "A Photo is deleted with identifier {{ param }}"
+    }
+  }
+}
